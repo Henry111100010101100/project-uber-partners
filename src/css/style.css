@@ -2,6 +2,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+header{
+    position: relative;
+}
+
 nav{
     height: 50px;
     background: #212121;
@@ -28,8 +32,11 @@ nav{
 }
 
 .subheader{
+    position: absolute;
+    width: 100%;
     background: rgba(0,0,0,0.6);
     height: 87px;
+    z-index: 2;
 }
 
 .subheader .subheader_logo{
@@ -76,5 +83,57 @@ nav{
     font-size: 14px;   
     text-transform: uppercase;
     color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+}
+
+.promo {
+    min-height: 800px;
+    background: url('../img/first_screen/uber_bg.png') center center/cover no-repeat;
+    padding: 150px 0 185px 0;
+}
+
+.promo .promo_header{
+    margin: 0;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo .promo_subheader{
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.promo .promo_descr{
+    margin-top: 23px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.promo .promo_btn{
+    display: block;
+    margin: 115px auto 0 auto;
+    padding: 18px 45px;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
